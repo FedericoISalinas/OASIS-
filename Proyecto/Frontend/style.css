@@ -1,0 +1,760 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+/* Evita el scroll horizontal */
+* {
+    box-sizing: border-box; /* Previene que el padding expanda el ancho de los elementos */
+  }
+  
+
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    max-width: 100%;
+}
+.about-us text{
+    margin-right: 2;
+}
+.col-md-5 .content {
+    flex: 1;
+}
+
+.content h2 {
+    font-size: 2.7em;
+    margin-bottom: 20px;
+    margin-left: 200px;
+}
+
+.content p {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #000;
+    max-width: 700px;
+    margin-left: 200px;
+}
+
+.cta-button {
+    margin-top: 100px;
+    display: inline-block;
+    padding: 18px 22px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-left: 200px;
+    font-size: 1.5em;
+}
+.fondoimagen {
+    display: flex;
+    justify-content: space-between; /* Texto a la izquierda, imagen a la derecha */
+    align-items: center; /* Centrado vertical */
+    
+    background-image: url('/Frontend/Imagenes/fondopagina2.png');
+    background-size: cover;
+    background-position: center;
+
+    /* Evita desbordes con rellenos */
+    padding: 2rem; /* Ajustá según necesidad, pero no uses valores enormes */
+    
+    width: 97vw;
+    box-sizing: border-box; /* Importante: incluye padding en el ancho total */
+    overflow: hidden; /* Previene cualquier contenido que se desborde */
+}
+
+
+.texto {
+    max-width: 80%; /* Limita el ancho del texto */
+    color: #fff; /* Color del texto */ 
+}
+
+.imagen img {
+    max-height: 500px; /* Ajusta la altura de la imagen */
+    object-fit: contain; /* Asegura que la imagen mantenga sus proporciones */
+}
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fondoimagen2 img{
+    background-repeat: no repeat;
+    width: 100%;
+}
+.image img {
+    border-radius: 10px;
+    max-width: 90%;
+    height: 400px;
+   
+}
+@media (max-width: 768px) {
+    .about-us {
+      flex-direction: column;
+      padding: 20px;
+    }
+    .content h2, .content p, .cta-button {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  
+
+    .col-md-5 img {
+        width: 40%;
+        margin-left: 30%;
+        margin-top: 17%;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        
+    }
+
+    /* Estilo para la barra superior fija (top) */
+    .top {
+        background-color: hsla(0, 0%, 5%, 0.5);
+        height: 20px;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        padding: 45px;
+        z-index: 1000;
+        display: flex;  
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+    }
+    /* Estilo para los enlaces dentro de la barra superior */
+    .top a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 25px;
+        line-height: 70px;
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        transition: all 300ms;
+    }
+
+    /* Estilo al pasar el cursor sobre los enlaces */
+    .top a:hover {
+       color: #FDD835;;
+    }
+    
+    /* Estilo para la imagen del logo */
+    .logo img {
+        width: 4%;
+        height: 7%;
+        position: fixed;
+        left: 9%;
+        top: 3%;
+        
+    }
+        
+    /* IMAGEN DE FONDO INICIO DE PAGINA */
+    /* Estilo para el encabezado y párrafos dentro de containers */
+    .containers h1,p{
+        color: #fff;
+        margin-bottom: 20px
+    }
+    /* Estilo para la sección con ID "inicio" y sus filas */
+  
+
+
+    
+    /* Estilo para elementos con clase amarillo */
+    .amarillo {
+        color: #FCEC2A;
+    }
+    /* Estilo para elementos con clase p24 */
+    .p24 {
+        font-size: 24px !important;
+    }
+    /* Estilo para elementos con clase p300 */
+    .p300 {
+        font-weight: 300 !important;
+    }
+    /* Estilo para elementos con clase roboto */
+    .roboto {
+        font-family: 'Roboto Condensed', sans-serif !important;
+    }
+    /* Estilo para elementos con clase p92 */
+    .p92 {
+        font-size: 50px !important;
+    }
+    /* Estilo para párrafos */
+    p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    /* Estilo para elementos con clase p16 */
+    .p16 {
+        font-size: 16px !important;
+    }
+    /* Estilo para la lista no ordenada dentro de la etiqueta nav */
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    /* Estilo para los elementos de lista dentro de la etiqueta nav */
+    nav li {
+        margin: 0 15px;
+    }
+    /* Estilo específico para el elemento con ID "inicio" dentro de la clase "nav" */
+    .nav #inicio {
+        margin: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 20px; /* Ajusta el radio según sea necesario para obtener esquinas más redondeadas */
+        padding: 20px;
+        text-align: center;
+    }
+    /* Estilo para el pseudo-elemento "before" del elemento con ID "inicio" */
+    #inicio::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        border-radius: 20px; /* Puedes ajustar este valor para redondear más o menos las esquinas */
+        z-index: -1;
+    }
+    /* Estilo para los elementos h2 y p dentro del elemento con ID "inicio" */
+    #inicio > h2, #inicio > p {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+    }
+
+    
+
+/*MAPA*/
+/* Estilos para el mapa */
+.map-canvas {
+    width: 100%;
+    height: 510px;
+    border-style: 0;
+
+}
+
+
+
+.foquwu {
+    margin-bottom: -15px !important;
+}
+
+.txt {
+    font-family: 'Montserrat';
+    position: absolute;
+    display: flex;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    max-width: 40%;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+}
+.container p{
+    padding: 50px;
+}
+.section {
+    text-align:center;
+    max-width: 600px;
+}
+
+.section img {
+    max-width: 50%;
+}
+.section p {
+    text-align: justify;
+}
+h2 {
+    font-size: 2.6em;
+    color: #333;
+}
+
+p {
+    font-size: 1.3rem;
+    color: #000000;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.parallax {
+    height: 1000px; 
+    background-image: url('/Frontend/Imagenes/foto\ tiraso\ norte.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Contenido principal */
+.content {
+    padding: 20px;
+    background-color: #fff;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+/* FOOTER */
+/* Estilo general del footer */
+footer {
+    background-color: #000; /* Fondo negro */
+    color: #FFCC00; /* Texto amarillo */
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+/* Contenedor principal */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilo de la sección de contacto */
+.footer-contact h4,
+.footer-info h4,
+.footer-social h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.footer-contact p {
+    font-size: 1.4rem;
+    color: #FFF; /* Texto blanco */
+    margin-left: 2.2rem;
+}
+
+.footer-contact h4 {
+    color: #FFF;
+    margin-left: 2.2rem;
+}
+
+/* Estilo de las secciones de información */
+.footer-info {
+    display: flex;
+    gap: 6rem;
+   
+}
+
+.footer-info div {
+    text-align: left;
+}
+
+.footer-call h4 {
+    color: #fff;
+    margin-right: 22rem;    
+}
+
+.footer-email h4 {
+    color: #FFF;
+}
+.footer-call p {
+    white-space: nowrap; /* No permite que el texto se divida en varias líneas */
+    overflow: hidden;
+    color: #FFCC00;
+}
+.footer-email  {
+    white-space: nowrap; /* No permite que el texto se divida en varias líneas */
+    overflow: hidden;
+}
+
+.footer-email p {
+    color: #FFCC00;
+}
+/* Redes sociales */
+.footer-social .social-icons a {
+    margin-left: 1rem;
+}
+
+.footer-social .social-icons img {
+    width: 28px;
+    height: 28px;
+}
+
+.footer-social {
+    margin-right: 2.2rem;
+}
+a img {
+    opacity: 1; /* Transparencia inicial */
+    transition: opacity 0.3s ease; /* Suavidad en la transición */
+}
+
+a img:hover {
+    opacity: 1; /* Opacidad completa al pasar el cursor */
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+
+.footer-social h4{
+    color: #FFF;
+}
+
+/* Línea separadora */
+footer hr {
+    border: 1px solid #333; /* Línea gris */
+    margin: 40px 0;
+    
+}
+
+/* Contenido de la parte inferior */
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Logo y texto en la parte inferior */
+.footer-logo img {
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 0.9rem;
+    color: #FFF; /* Texto blanco */
+}
+
+/* Enlaces */
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Derechos reservados */
+.footer-copy p {
+    font-size: 1rem;
+    color: #FFF; /* Texto blanco */
+    margin-right: 45rem;
+}
+
+
+.footer-container h4 {
+    margin-bottom: 5px; /* Espacio ajustado debajo de los h4 */
+}
+
+.footer-container p {
+    margin-top: 0.7rem; /* Sin espacio arriba de los párrafos */
+    margin-bottom: 10px; /* Espacio ajustado debajo de los párrafos (opcional) */
+}
+.footer-container img {
+    margin-top: 0.8rem; /* Sin espacio arriba de los párrafos */
+    margin-bottom: 10px; /* Espacio ajustado debajo de los párrafos (opcional) */
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0.8; /* Transparencia inicial */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transición suave */
+}
+
+.whatsapp-button img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+    opacity: 1; /* Volver a opaco al pasar el mouse */
+}
+
+.trayectoria-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(/Frontend/Imagenes/fondopagina.png);
+    background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 50px; /* Opcional, para agregar espacio alrededor del contenido */
+  }
+  
+  .trayectoria-text {
+    width: 45%;
+    color: white; /* Para que el texto sea legible sobre el fondo */
+    margin-left: 50px;
+  }
+  
+  .trayectoria-images {
+    width: 45%;
+    position: relative;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    height: 500px; /* Ajustá según tus imágenes */
+  }
+  
+  .carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+    opacity: 0;
+    transform: scale(1.1);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    z-index: 0;
+  }
+  
+  .carousel img.active {
+    opacity: 1;
+    transform: scale(1); /* Efecto de zoom suave */
+    z-index: 1;
+  }
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 2;
+    transition: background-color 0.3s;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  button.prev {
+    left: 0;
+  }
+  
+  button.next {
+    right: 0;
+  }
+  .lotes {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .lotes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  .lote-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .lote-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .lote-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .lote-card h3 {
+    margin: 16px 0 8px;
+    font-size: 20px;
+  }
+  
+  .lote-card p {
+    margin: 0 16px 16px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+
+  .tarjeta {
+    position: relative;
+    overflow: hidden;
+    width: 300px;       /* Ajustá el ancho según necesites */
+    height: 200px;      /* Ajustá la altura según necesites */
+    cursor: pointer;
+  }
+  
+  .tarjeta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Al hacer hover, la imagen se agranda */
+  .tarjeta:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Texto oculto encima de la imagen */
+  .tarjeta .texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el texto */
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Al hacer hover, el texto aparece */
+  .tarjeta:hover .texto {
+    opacity: 1;
+  }
+  
+
+  /* Contenedor principal de las tarjetas */
+.lotes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px; /* más separación entre tarjetas */
+  padding: 60px 20px;
+}
+
+/* Estilo general de cada tarjeta */
+.lote-card {
+  width: 420px; /* más ancho */
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.lote-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Caja que contiene la imagen */
+
+.tarjeta {
+    position: relative;
+    width: 100%;
+    height: 100%; /* importante */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Imagen que cubre todo el espacio */
+  .tarjeta img {
+    width: 98%;
+    height: 98%;
+    object-fit: cover; /* esto hace que la imagen se adapte sin deformarse */
+    display: block;
+  }
+  
+/* Zoom al pasar el mouse por encima */
+.tarjeta:hover img {
+  transform: scale(1.1);
+}
+
+/* Texto flotante al hacer hover */
+.tarjeta .texto {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  padding: 14px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Mostrar el texto al hacer hover */
+.tarjeta:hover .texto {
+  opacity: 1;
+}
+
+/* Títulos y descripción */
+.lote-card h3 {
+  margin-top: 16px;
+  font-size: 22px;
+}
+
+.lote-card p {
+  font-size: 16px;
+  color: #555;
+}
